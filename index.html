@@ -42,32 +42,61 @@
     </header>
     <main>
         <section class="categorias__titulo">
-            <h3 class="caracteristicas__titulo">Principais características</h3>
-            <div class="caracteristicas__bloco1">
-                <h4>Experiência imersiva e personalizada</h4>
-                <p>Oferecemos uma experiência de usuário envolvente e personalizada, adaptando-se às novidades.</p>
-            </div>
-            <div class="caracteristicas__bloco2">
-                <h4>Navegação intuitiva e design responsivo</h4>
-                <p>Levamos a sério a beleza e intuitividade de nosso site e garantimos uma excelente experiência.</p>
-            </div>
-            <div class="caracteristivas__bloco3">
-                <h4>Contéudo de alta qualidade e atualizado</h4>
-                <p>Descrubra o que está em alta no momento.</p>
-            </div>
-            <div class="caracteristivas__bloco4">
-                <h4>Interação e engajamento com a comunidade</h4>
-                <p>Descrubra o que está em alta no momento.</p>
+            <h3 class="caracteristicas__titulo animate__animated animate__backInLeft">Principais características</h3>
+            <div class="caracteristicas__blocos">
+                <div class="caracteristicas__bloco1 animate__animated animate__backInLeft">
+                    <h4>Experiência imersiva e personalizada</h4>
+                    <p>Oferecemos uma experiência de usuário envolvente e personalizada, adaptando-se às novidades.</p>
+                </div>
+                <div class="caracteristicas__bloco2 animate__animated animate__backInLeft">
+                    <h4>Navegação intuitiva e design responsivo</h4>
+                    <p>Levamos a sério a beleza e intuitividade de nosso site e garantimos uma excelente experiência.</p>
+                </div>
+                <div class="caracteristicas__bloco3 animate__animated animate__backInLeft animate__animated animate__backInLeft">
+                    <h4>Contéudo de alta qualidade e atualizado</h4>
+                    <p>Descrubra o que está em alta no momento.</p>
+                </div>
+                <div class="caracteristicas__bloco4 animate__animated animate__backInLeft">
+                    <h4>Interação e engajamento com a comunidade</h4>
+                    <p>Descrubra o que está em alta no momento.</p>
+                </div>
             </div>
         </section>
         <section class="movie">
-            <h1 class="movie__title">
+            <h1 class="movie__title animate__animated animate__backInLeft">
                 Filmes mais aclamados e desejados
             </h1>
-            <div class="atropos my-atropos1">
-
+            <div class="atropos my-atropos1 animate__animated animate__backInLeft">
+                <div class="movie_conteudo">
+                    <div>
+                        <img src="./image/terror.webp" alt="terror" />
+                        <p>Terror</p>
+                    </div>
+    
+                    <div>
+                        <img src="./image/comedia.webp" alt="comedia" />
+                        <p>Comedia</p>
+                    </div>
+    
+                    <div>
+                        <img src="./image/drama.jpg" alt="drama" />
+                        <p>Drama</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div>
+            &copy; Todos os direitos reservados <span id="anoAtual"></span> - <a href="https://github.com/Henrique1818" title="GitHub">Henrique1818</a>
+        </div>
+    </footer>
+
+    <script>
+        var date = new Date();
+
+        let anoAtual = document.getElementById('anoAtual');
+        anoAtual.innerHTML = date.getFullYear();
+    </script>
 </body>
 </html>
